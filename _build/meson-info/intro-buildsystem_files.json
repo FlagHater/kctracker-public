@@ -1,8 +1,0 @@
-[
-  "/home/marco/Projects/kctracker/meson.build",
-  "/home/marco/Projects/kctracker/data/meson.build",
-  "/home/marco/Projects/kctracker/data/me.flagmaster.kctracker.service.in",
-  "/home/marco/Projects/kctracker/data/icons/meson.build",
-  "/home/marco/Projects/kctracker/src/meson.build",
-  "/home/marco/Projects/kctracker/po/meson.build"
-]

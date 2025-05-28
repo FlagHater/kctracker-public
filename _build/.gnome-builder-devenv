@@ -1,6 +1,0 @@
-MESON_PROJECT_NAME="kctracker"
-export MESON_PROJECT_NAME
-PATH="/home/marco/Projects/kctracker/_build/src:$PATH"
-export PATH
-MESON_DEVENV="1"
-export MESON_DEVENV

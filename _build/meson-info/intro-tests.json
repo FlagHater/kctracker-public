@@ -1,0 +1,65 @@
+[
+  {
+    "cmd": [
+      "/usr/bin/desktop-file-validate",
+      "data/me.flagmaster.kctracker.desktop"
+    ],
+    "env": {},
+    "name": "Validate desktop file",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "kctracker"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "3a6eb07@@me.flagmaster.kctracker.desktop@cus"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/usr/bin/appstreamcli",
+      "validate",
+      "--no-net",
+      "--explain",
+      "data/me.flagmaster.kctracker.metainfo.xml"
+    ],
+    "env": {},
+    "name": "Validate appstream file",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "kctracker"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "3a6eb07@@me.flagmaster.kctracker.metainfo.xml@cus"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/usr/bin/glib-compile-schemas",
+      "--strict",
+      "--dry-run",
+      "/home/marco/Projects/kctracker/data"
+    ],
+    "env": {},
+    "name": "Validate schema file",
+    "workdir": null,
+    "timeout": 30,
+    "suite": [
+      "kctracker"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [],
+    "extra_paths": []
+  }
+]

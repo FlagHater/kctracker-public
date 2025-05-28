@@ -1,0 +1,444 @@
+Build started at 2025-05-28T00:06:37.552065
+Main binary: /usr/bin/python
+Build Options: -Dprefix=/app -Dlibdir=lib
+Python system: Linux
+The Meson build system
+Version: 1.5.2
+Source dir: /home/marco/Projects/kctracker
+Build dir: /home/marco/Projects/kctracker/_build
+Build type: native build
+Project name: kctracker
+Project version: 0.1.0
+-----------
+Detecting compiler via: `cc --version` -> 0
+stdout:
+cc (GCC) 14.2.0
+Copyright (C) 2024 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: -cpp -x c -E -dM -
+-----
+-----------
+Detecting linker via: `cc -Wl,--version -L/app/lib` -> 0
+stdout:
+GNU ld (GNU Binutils) 2.44
+Copyright (C) 2025 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+-----------
+stderr:
+collect2 version 14.2.0
+/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../../aarch64-unknown-linux-gnu/bin/ld -plugin /usr/libexec/gcc/aarch64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpUxGua.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie /usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/app/lib -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../aarch64-linux-gnu -L/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../../aarch64-unknown-linux-gnu/lib -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../.. --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../aarch64-linux-gnu/crtn.o
+-----------
+Sanity testing C compiler: ccache cc
+Is cross compiler: False.
+Sanity check compiler command line: ccache cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64 -L/app/lib
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /home/marco/Projects/kctracker/_build/meson-private/sanitycheckc.exe
+C compiler for the host machine: ccache cc (gcc 14.2.0 "cc (GCC) 14.2.0")
+C linker for the host machine: cc ld.bfd 2.44
+-----------
+Detecting archiver via: `gcc-ar --version` -> 0
+stdout:
+GNU ar (GNU Binutils) 2.44
+Copyright (C) 2025 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+-----------
+-----------
+Detecting compiler via: `valac --version` -> 0
+stdout:
+Vala 0.56.18
+-----------
+Running compile:
+Working directory:  /tmp/tmp29qq7bzy
+Code:
+class MesonSanityCheck : Object { }
+-----------
+Command line: `valac /tmp/tmp29qq7bzy/testfile.vala -C` -> 0
+Vala compiler for the host machine: valac (valac 0.56.18)
+-----------
+Detecting compiler via: `cc --version` -> 0
+stdout:
+cc (GCC) 14.2.0
+Copyright (C) 2024 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+-----------
+Running command: -cpp -x c -E -dM -
+-----
+-----------
+Detecting linker via: `cc -Wl,--version -L/app/lib` -> 0
+stdout:
+GNU ld (GNU Binutils) 2.44
+Copyright (C) 2025 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+-----------
+stderr:
+collect2 version 14.2.0
+/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../../aarch64-unknown-linux-gnu/bin/ld -plugin /usr/libexec/gcc/aarch64-unknown-linux-gnu/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/aarch64-unknown-linux-gnu/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbpFG1l.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie /usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/crtbeginS.o -L/app/lib -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0 -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../aarch64-linux-gnu -L/lib/aarch64-linux-gnu -L/usr/lib/aarch64-linux-gnu -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../../aarch64-unknown-linux-gnu/lib -L/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../.. --version -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/crtendS.o /usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../aarch64-linux-gnu/crtn.o
+-----------
+Sanity testing C compiler: ccache cc
+Is cross compiler: False.
+Sanity check compiler command line: ccache cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64 -L/app/lib
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /home/marco/Projects/kctracker/_build/meson-private/sanitycheckc.exe
+C compiler for the build machine: ccache cc (gcc 14.2.0 "cc (GCC) 14.2.0")
+C linker for the build machine: cc ld.bfd 2.44
+-----------
+Detecting archiver via: `gcc-ar --version` -> 0
+stdout:
+GNU ar (GNU Binutils) 2.44
+Copyright (C) 2025 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+-----------
+-----------
+Detecting compiler via: `valac --version` -> 0
+stdout:
+Vala 0.56.18
+-----------
+Using cached compile:
+Cached command line:  valac /tmp/tmp29qq7bzy/testfile.vala -C 
+
+Code:
+ class MesonSanityCheck : Object { }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Vala compiler for the build machine: valac (valac 0.56.18)
+Build machine cpu family: aarch64
+Build machine cpu: aarch64
+Host machine cpu family: aarch64
+Host machine cpu: aarch64
+Target machine cpu family: aarch64
+Target machine cpu: aarch64
+Configuring config.h using configuration
+Library config found: YES
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Program desktop-file-validate found: YES (/usr/bin/desktop-file-validate)
+Adding test "Validate desktop file"
+Program appstreamcli found: YES (/usr/bin/appstreamcli)
+Adding test "Validate appstream file"
+Program glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Adding test "Validate schema file"
+Configuring me.flagmaster.kctracker.service using configuration
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: YES (/usr/bin/pkg-config) 2.4.3
+Determining dependency 'gtk4' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion gtk4` -> 0
+stdout:
+4.18.4
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags gtk4` -> 0
+stdout:
+-I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/webp -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/graphene-1.0 -I/usr/lib/aarch64-linux-gnu/graphene-1.0/include -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -pthread
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gtk4` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lgtk-4 -lpangocairo-1.0 -lpango-1.0 -lgdk_pixbuf-2.0 -lcairo-gobject -lcairo -lharfbuzz -lvulkan -lgraphene-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gtk4` -> 0
+stdout:
+-lgtk-4 -lpangocairo-1.0 -lpango-1.0 -lgdk_pixbuf-2.0 -lcairo-gobject -lcairo -lharfbuzz -lvulkan -lgraphene-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+Running compile:
+Working directory:  /home/marco/Projects/kctracker/_build/meson-private/tmpjun58ex7
+Code:
+
+        #include<stddef.h>
+        #include<stdio.h>
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+-----------
+Command line: `cc -L/app/lib /home/marco/Projects/kctracker/_build/meson-private/tmpjun58ex7/testfile.c -o /home/marco/Projects/kctracker/_build/meson-private/tmpjun58ex7/output.exe -D_FILE_OFFSET_BITS=64 -O0` -> 0
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/marco/Projects/kctracker/_build/meson-private/tmp0cvpcsur
+Code:
+
+-----------
+Command line: `cc /home/marco/Projects/kctracker/_build/meson-private/tmp0cvpcsur/testfile.c -o /home/marco/Projects/kctracker/_build/meson-private/tmp0cvpcsur/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs` -> 0
+stdout:
+install: /usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/
+programs: =/usr/libexec/gcc/aarch64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/aarch64-unknown-linux-gnu/14.2.0/:/usr/libexec/gcc/aarch64-unknown-linux-gnu/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/aarch64-unknown-linux-gnu/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../../aarch64-unknown-linux-gnu/bin/aarch64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../../aarch64-unknown-linux-gnu/bin/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../../aarch64-unknown-linux-gnu/bin/
+libraries: =/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../../aarch64-unknown-linux-gnu/lib/aarch64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../../aarch64-unknown-linux-gnu/lib/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../../aarch64-unknown-linux-gnu/lib/../lib64/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../aarch64-unknown-linux-gnu/14.2.0/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../../lib64/:/lib/aarch64-unknown-linux-gnu/14.2.0/:/lib/aarch64-linux-gnu/:/lib/../lib64/:/usr/lib/aarch64-unknown-linux-gnu/14.2.0/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib64/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../../aarch64-unknown-linux-gnu/lib/:/usr/lib/gcc/aarch64-unknown-linux-gnu/14.2.0/../../../:/lib/:/usr/lib/
+-----------
+Run-time dependency gtk4 found: YES 4.18.4
+Determining dependency 'libadwaita-1' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion libadwaita-1` -> 0
+stdout:
+1.7.2
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags libadwaita-1` -> 0
+stdout:
+-I/usr/include/libadwaita-1 -I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/webp -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/usr/include/graphene-1.0 -I/usr/lib/aarch64-linux-gnu/graphene-1.0/include -I/usr/include/fribidi -I/usr/include/appstream -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/sysprof-6 -pthread
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libadwaita-1` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -ladwaita-1 -lgtk-4 -lpangocairo-1.0 -lpango-1.0 -lgdk_pixbuf-2.0 -lcairo-gobject -lcairo -lharfbuzz -lvulkan -lgraphene-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libadwaita-1` -> 0
+stdout:
+-ladwaita-1 -lgtk-4 -lpangocairo-1.0 -lpango-1.0 -lgdk_pixbuf-2.0 -lcairo-gobject -lcairo -lharfbuzz -lvulkan -lgraphene-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+Run-time dependency libadwaita-1 found: YES 1.7.2
+Determining dependency 'shumate-1.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion shumate-1.0` -> 0
+stdout:
+1.5.alpha
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags shumate-1.0` -> 0
+stdout:
+-I/app/include/shumate-1.0 -I/usr/include/gtk-4.0 -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/webp -I/usr/include/cairo -I/usr/include/graphene-1.0 -I/usr/lib/aarch64-linux-gnu/graphene-1.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/app/include/libsoup-3.0 -I/app/include/json-glib-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -pthread
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs shumate-1.0` -> 0
+stdout:
+-L/app/lib -lshumate-1.0 -L/usr/lib/aarch64-linux-gnu -lgtk-4 -lpangocairo-1.0 -lpango-1.0 -lgdk_pixbuf-2.0 -lcairo-gobject -lvulkan -lgraphene-1.0 -lcairo -lharfbuzz -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs shumate-1.0` -> 0
+stdout:
+-L/app/lib -lshumate-1.0 -lgtk-4 -lpangocairo-1.0 -lpango-1.0 -lgdk_pixbuf-2.0 -lcairo-gobject -lvulkan -lgraphene-1.0 -lcairo -lharfbuzz -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+Run-time dependency shumate-1.0 found: YES 1.5.alpha
+Determining dependency 'libsoup-3.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion libsoup-3.0` -> 0
+stdout:
+3.6.4
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags libsoup-3.0` -> 0
+stdout:
+-I/app/include/libsoup-3.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -pthread
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libsoup-3.0` -> 0
+stdout:
+-L/app/lib -lsoup-3.0 -L/usr/lib/aarch64-linux-gnu -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -pthread -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs libsoup-3.0` -> 0
+stdout:
+-L/app/lib -lsoup-3.0 -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -pthread -lglib-2.0
+-----------
+Run-time dependency libsoup-3.0 found: YES 3.6.4
+Determining dependency 'json-glib-1.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion json-glib-1.0` -> 0
+stdout:
+1.9.1
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags json-glib-1.0` -> 0
+stdout:
+-I/app/include/json-glib-1.0 -I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -pthread
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs json-glib-1.0` -> 0
+stdout:
+-L/app/lib -ljson-glib-1.0 -L/usr/lib/aarch64-linux-gnu -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs json-glib-1.0` -> 0
+stdout:
+-L/app/lib -ljson-glib-1.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+Run-time dependency json-glib-1.0 found: YES 1.9.1
+Determining dependency 'glib-2.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion glib-2.0` -> 0
+stdout:
+2.84.1
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags glib-2.0` -> 0
+stdout:
+-I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/sysprof-6 -pthread
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs glib-2.0` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs glib-2.0` -> 0
+stdout:
+-lglib-2.0
+-----------
+Determining dependency 'gio-2.0' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --modversion gio-2.0` -> 0
+stdout:
+2.84.1
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --cflags gio-2.0` -> 0
+stdout:
+-I/usr/include/glib-2.0 -I/usr/lib/aarch64-linux-gnu/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/sysprof-6 -pthread
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gio-2.0` -> 0
+stdout:
+-L/usr/lib/aarch64-linux-gnu -lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --libs gio-2.0` -> 0
+stdout:
+-lgio-2.0 -lgobject-2.0 -lglib-2.0
+-----------
+Build-time dependency gio-2.0 found: YES 2.84.1
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --variable=glib_compile_resources gio-2.0` -> 0
+stdout:
+/usr/bin/glib-compile-resources
+-----------
+Got pkg-config variable glib_compile_resources : /usr/bin/glib-compile-resources
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Dependency gio-2.0 found: YES 2.84.1 (cached)
+env[PKG_CONFIG_PATH]: /app/lib/pkgconfig:/app/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
+env[PKG_CONFIG]: /usr/bin/pkg-config
+-----------
+Called: `/usr/bin/pkg-config --variable=glib_compile_schemas gio-2.0` -> 0
+stdout:
+/usr/bin/glib-compile-schemas
+-----------
+Got pkg-config variable glib_compile_schemas : /usr/bin/glib-compile-schemas
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Program update-desktop-database found: YES (/usr/bin/update-desktop-database)
+Build targets in project: 8
+
+kctracker 0.1.0
+
+  User defined options
+    libdir: lib
+    prefix: /app
+
+Found ninja-1.12.1 at /usr/bin/ninja
+Failed to guess install tag for /app/share/applications/me.flagmaster.kctracker.desktop
+Failed to guess install tag for /app/share/metainfo/me.flagmaster.kctracker.metainfo.xml
+Failed to guess install tag for /app/share/glib-2.0/schemas/me.flagmaster.kctracker.gschema.xml
+Failed to guess install tag for /app/share/dbus-1/services/me.flagmaster.kctracker.service
+Failed to guess install tag for /app/share/icons/hicolor/scalable/apps/me.flagmaster.kctracker.svg
+Failed to guess install tag for /app/share/icons/hicolor/symbolic/apps/me.flagmaster.kctracker-symbolic.svg
+Failed to guess install tag for /app/share/icons/hicolor/symbolic/apps/compass-symbolic.svg
+Failed to guess install tag for install script: /usr/bin/glib-compile-schemas /app/share/glib-2.0/schemas
+Failed to guess install tag for install script: /usr/bin/gtk4-update-icon-cache -q -t -f /app/share/icons/hicolor
+Failed to guess install tag for install script: /usr/bin/update-desktop-database -q /app/share/applications
+Failed to guess install tag for /app/share/applications/me.flagmaster.kctracker.desktop
+Failed to guess install tag for /app/share/metainfo/me.flagmaster.kctracker.metainfo.xml
+Failed to guess install tag for /app/share/glib-2.0/schemas/me.flagmaster.kctracker.gschema.xml
+Failed to guess install tag for /app/share/dbus-1/services/me.flagmaster.kctracker.service
+Failed to guess install tag for /app/share/icons/hicolor/scalable/apps/me.flagmaster.kctracker.svg
+Failed to guess install tag for /app/share/icons/hicolor/symbolic/apps/me.flagmaster.kctracker-symbolic.svg
+Failed to guess install tag for /app/share/icons/hicolor/symbolic/apps/compass-symbolic.svg
+Failed to guess install tag for install script: /usr/bin/glib-compile-schemas /app/share/glib-2.0/schemas
+Failed to guess install tag for install script: /usr/bin/gtk4-update-icon-cache -q -t -f /app/share/icons/hicolor
+Failed to guess install tag for install script: /usr/bin/update-desktop-database -q /app/share/applications

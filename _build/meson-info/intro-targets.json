@@ -1,0 +1,363 @@
+[
+  {
+    "name": "me.flagmaster.kctracker.desktop",
+    "id": "3a6eb07@@me.flagmaster.kctracker.desktop@cus",
+    "type": "custom",
+    "defined_in": "/home/marco/Projects/kctracker/data/meson.build",
+    "filename": [
+      "/home/marco/Projects/kctracker/_build/data/me.flagmaster.kctracker.desktop"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/meson",
+          "--internal",
+          "msgfmthelper",
+          "--msgfmt=/usr/bin/msgfmt",
+          "@INPUT@",
+          "@OUTPUT@",
+          "desktop",
+          "../data/../po"
+        ],
+        "parameters": [],
+        "sources": [
+          "/home/marco/Projects/kctracker/me.flagmaster.kctracker.desktop.in"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": true,
+    "install_filename": [
+      "/app/share/applications/me.flagmaster.kctracker.desktop"
+    ]
+  },
+  {
+    "name": "me.flagmaster.kctracker.metainfo.xml",
+    "id": "3a6eb07@@me.flagmaster.kctracker.metainfo.xml@cus",
+    "type": "custom",
+    "defined_in": "/home/marco/Projects/kctracker/data/meson.build",
+    "filename": [
+      "/home/marco/Projects/kctracker/_build/data/me.flagmaster.kctracker.metainfo.xml"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/meson",
+          "--internal",
+          "msgfmthelper",
+          "--msgfmt=/usr/bin/msgfmt",
+          "@INPUT@",
+          "@OUTPUT@",
+          "xml",
+          "../data/../po"
+        ],
+        "parameters": [],
+        "sources": [
+          "/home/marco/Projects/kctracker/me.flagmaster.kctracker.metainfo.xml.in"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": true,
+    "install_filename": [
+      "/app/share/metainfo/me.flagmaster.kctracker.metainfo.xml"
+    ]
+  },
+  {
+    "name": "kctracker-resources_c",
+    "id": "25a6634@@kctracker-resources_c@cus",
+    "type": "custom",
+    "defined_in": "/home/marco/Projects/kctracker/src/meson.build",
+    "filename": [
+      "/home/marco/Projects/kctracker/_build/src/kctracker-resources.c"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/glib-compile-resources",
+          "@INPUT@",
+          "--sourcedir",
+          "../src",
+          "--sourcedir",
+          "../data",
+          "--c-name",
+          "kctracker",
+          "--internal",
+          "--generate",
+          "--target",
+          "@OUTPUT@",
+          "--dependency-file",
+          "@DEPFILE@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/home/marco/Projects/kctracker/kctracker.gresource.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "kctracker-resources_h",
+    "id": "25a6634@@kctracker-resources_h@cus",
+    "type": "custom",
+    "defined_in": "/home/marco/Projects/kctracker/src/meson.build",
+    "filename": [
+      "/home/marco/Projects/kctracker/_build/src/kctracker-resources.h"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "unknown",
+        "compiler": [
+          "/usr/bin/glib-compile-resources",
+          "@INPUT@",
+          "--sourcedir",
+          "../src",
+          "--sourcedir",
+          "../data",
+          "--c-name",
+          "kctracker",
+          "--internal",
+          "--generate",
+          "--target",
+          "@OUTPUT@"
+        ],
+        "parameters": [],
+        "sources": [
+          "/home/marco/Projects/kctracker/kctracker.gresource.xml"
+        ],
+        "generated_sources": []
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "kctracker",
+    "id": "25a6634@@kctracker@exe",
+    "type": "executable",
+    "defined_in": "/home/marco/Projects/kctracker/src/meson.build",
+    "filename": [
+      "/home/marco/Projects/kctracker/_build/src/kctracker"
+    ],
+    "build_by_default": true,
+    "target_sources": [
+      {
+        "language": "vala",
+        "compiler": [
+          "valac"
+        ],
+        "parameters": [
+          "-C",
+          "--debug",
+          "--pkg",
+          "json-glib-1.0",
+          "--pkg",
+          "libsoup-3.0",
+          "--pkg",
+          "shumate-1.0",
+          "--pkg",
+          "libadwaita-1",
+          "--pkg",
+          "gtk4",
+          "/home/marco/Projects/kctracker/src/config.vapi",
+          "--color=always",
+          "--directory",
+          "src/kctracker.p",
+          "--basedir",
+          "../src",
+          "--gresources=../src/kctracker.gresource.xml",
+          "--gresourcesdir=src/../src",
+          "--gresourcesdir=src/../data"
+        ],
+        "sources": [
+          "/home/marco/Projects/kctracker/src/main.vala",
+          "/home/marco/Projects/kctracker/src/application.vala",
+          "/home/marco/Projects/kctracker/src/window.vala",
+          "/home/marco/Projects/kctracker/src/gtk/mapwidget.vala",
+          "/home/marco/Projects/kctracker/src/gtk/markers.vala",
+          "/home/marco/Projects/kctracker/src/gtk/markermaker.vala"
+        ],
+        "generated_sources": [],
+        "unity_sources": []
+      },
+      {
+        "language": "c",
+        "compiler": [
+          "ccache",
+          "cc"
+        ],
+        "parameters": [
+          "-I/home/marco/Projects/kctracker/_build/src/kctracker.p",
+          "-I/home/marco/Projects/kctracker/_build/src",
+          "-I/home/marco/Projects/kctracker/src",
+          "-I/home/marco/Projects/kctracker/_build",
+          "-I/home/marco/Projects/kctracker",
+          "-I/usr/include/gtk-4.0",
+          "-I/usr/include/pango-1.0",
+          "-I/usr/include/fribidi",
+          "-I/usr/include/harfbuzz",
+          "-I/usr/include/gdk-pixbuf-2.0",
+          "-I/usr/include/webp",
+          "-I/usr/include/cairo",
+          "-I/usr/include/freetype2",
+          "-I/usr/include/libpng16",
+          "-I/usr/include/pixman-1",
+          "-I/usr/include/graphene-1.0",
+          "-I/usr/lib/aarch64-linux-gnu/graphene-1.0/include",
+          "-I/usr/include/glib-2.0",
+          "-I/usr/lib/aarch64-linux-gnu/glib-2.0/include",
+          "-I/usr/include/libmount",
+          "-I/usr/include/blkid",
+          "-I/usr/include/sysprof-6",
+          "-I/usr/include/libadwaita-1",
+          "-I/usr/include/appstream",
+          "-I/app/include/shumate-1.0",
+          "-I/app/include/libsoup-3.0",
+          "-I/app/include/json-glib-1.0",
+          "-fdiagnostics-color=always",
+          "-D_FILE_OFFSET_BITS=64",
+          "-Wall",
+          "-Winvalid-pch",
+          "-Wextra",
+          "-O0",
+          "-g",
+          "-DGETTEXT_PACKAGE=\"kctracker\"",
+          "-pthread"
+        ],
+        "sources": [],
+        "generated_sources": [
+          "/home/marco/Projects/kctracker/_build/src/kctracker-resources.c",
+          "/home/marco/Projects/kctracker/_build/src/kctracker.p/main.c",
+          "/home/marco/Projects/kctracker/_build/src/kctracker.p/application.c",
+          "/home/marco/Projects/kctracker/_build/src/kctracker.p/window.c",
+          "/home/marco/Projects/kctracker/_build/src/kctracker.p/gtk/mapwidget.c",
+          "/home/marco/Projects/kctracker/_build/src/kctracker.p/gtk/markers.c",
+          "/home/marco/Projects/kctracker/_build/src/kctracker.p/gtk/markermaker.c"
+        ],
+        "unity_sources": []
+      },
+      {
+        "linker": [
+          "cc"
+        ],
+        "parameters": [
+          "-L/app/lib",
+          "-Wl,--as-needed",
+          "-Wl,--no-undefined",
+          "-Wl,-rpath,/app/lib",
+          "-Wl,-rpath-link,/app/lib",
+          "-Wl,--start-group",
+          "-Wl,--start-group",
+          "/usr/lib/aarch64-linux-gnu/libgtk-4.so",
+          "/usr/lib/aarch64-linux-gnu/libpangocairo-1.0.so",
+          "/usr/lib/aarch64-linux-gnu/libpango-1.0.so",
+          "/usr/lib/aarch64-linux-gnu/libgdk_pixbuf-2.0.so",
+          "/usr/lib/aarch64-linux-gnu/libcairo-gobject.so",
+          "/usr/lib/aarch64-linux-gnu/libcairo.so",
+          "/usr/lib/aarch64-linux-gnu/libharfbuzz.so",
+          "/usr/lib/aarch64-linux-gnu/libvulkan.so",
+          "/usr/lib/aarch64-linux-gnu/libgraphene-1.0.so",
+          "/usr/lib/aarch64-linux-gnu/libgio-2.0.so",
+          "/usr/lib/aarch64-linux-gnu/libgobject-2.0.so",
+          "/usr/lib/aarch64-linux-gnu/libglib-2.0.so",
+          "/usr/lib/aarch64-linux-gnu/libadwaita-1.so",
+          "/app/lib/libshumate-1.0.so",
+          "/app/lib/libsoup-3.0.so",
+          "/usr/lib/aarch64-linux-gnu/libgmodule-2.0.so",
+          "-pthread",
+          "/app/lib/libjson-glib-1.0.so",
+          "-Wl,--end-group",
+          "-Wl,--end-group"
+        ]
+      }
+    ],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [
+      "config",
+      "gtk4",
+      "libadwaita-1",
+      "shumate-1.0",
+      "libsoup-3.0",
+      "json-glib-1.0"
+    ],
+    "depends": [],
+    "win_subsystem": "console",
+    "installed": true,
+    "install_filename": [
+      "/app/bin/kctracker"
+    ]
+  },
+  {
+    "name": "kctracker-pot",
+    "id": "6199aec@@kctracker-pot@run",
+    "type": "run",
+    "defined_in": "/home/marco/Projects/kctracker/po/meson.build",
+    "filename": [
+      "/home/marco/Projects/kctracker/_build/po/kctracker-pot"
+    ],
+    "build_by_default": false,
+    "target_sources": [],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "kctracker-gmo",
+    "id": "6199aec@@kctracker-gmo@run",
+    "type": "alias",
+    "defined_in": "/home/marco/Projects/kctracker/po/meson.build",
+    "filename": [
+      "/home/marco/Projects/kctracker/_build/po/kctracker-gmo"
+    ],
+    "build_by_default": false,
+    "target_sources": [],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  },
+  {
+    "name": "kctracker-update-po",
+    "id": "6199aec@@kctracker-update-po@run",
+    "type": "run",
+    "defined_in": "/home/marco/Projects/kctracker/po/meson.build",
+    "filename": [
+      "/home/marco/Projects/kctracker/_build/po/kctracker-update-po"
+    ],
+    "build_by_default": false,
+    "target_sources": [],
+    "extra_files": [],
+    "subproject": null,
+    "dependencies": [],
+    "depends": [],
+    "installed": false
+  }
+]

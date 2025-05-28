@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/me/flagmaster/kctracker">
+    <file preprocess="xml-stripblanks">window.ui</file>
+    <file preprocess="xml-stripblanks">gtk/help-overlay.ui</file>
+    <file preprocess="json-stripblanks">gtk/routes.json</file>
+    <file alias="iconColours.css">gtk/iconColours.css</file>
+    <file preprocess="xml-stripblanks">symbolic-icons/compass-alt-symbolic.svg</file>
+    <!-- <file preprocess="xml-stripblanks" alias="circle-filled-symbolic">../data/icons/circle-filled-symbolic.svg</file> -->
+  </gresource>
+</gresources>

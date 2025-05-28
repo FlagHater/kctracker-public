@@ -1,0 +1,8 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+data/me.flagmaster.kctracker.desktop.in
+data/me.flagmaster.kctracker.metainfo.xml.in
+data/me.flagmaster.kctracker.gschema.xml
+src/main.vala
+src/window.vala
+src/window.ui

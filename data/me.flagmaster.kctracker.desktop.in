@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=kctracker
+Exec=kctracker
+Icon=me.flagmaster.kctracker
+Terminal=false
+Type=Application
+Categories=Utility;
+Keywords=bus, tracker;
+StartupNotify=true
+DBusActivatable=true

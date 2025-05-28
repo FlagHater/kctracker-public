@@ -1,0 +1,48 @@
+{
+  "targets": {
+    "/home/marco/Projects/kctracker/_build/data/me.flagmaster.kctracker.desktop": {
+      "destination": "{datadir}/applications/me.flagmaster.kctracker.desktop",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/marco/Projects/kctracker/_build/data/me.flagmaster.kctracker.metainfo.xml": {
+      "destination": "{datadir}/metainfo/me.flagmaster.kctracker.metainfo.xml",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/marco/Projects/kctracker/_build/src/kctracker": {
+      "destination": "{bindir}/kctracker",
+      "tag": "runtime",
+      "subproject": null
+    }
+  },
+  "data": {
+    "/home/marco/Projects/kctracker/data/me.flagmaster.kctracker.gschema.xml": {
+      "destination": "{datadir}/glib-2.0/schemas/me.flagmaster.kctracker.gschema.xml",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/marco/Projects/kctracker/data/icons/hicolor/scalable/apps/me.flagmaster.kctracker.svg": {
+      "destination": "{datadir}/icons/hicolor/scalable/apps/me.flagmaster.kctracker.svg",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/marco/Projects/kctracker/data/icons/hicolor/symbolic/apps/me.flagmaster.kctracker-symbolic.svg": {
+      "destination": "{datadir}/icons/hicolor/symbolic/apps/me.flagmaster.kctracker-symbolic.svg",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/marco/Projects/kctracker/data/icons/compass-symbolic.svg": {
+      "destination": "{datadir}/icons/hicolor/symbolic/apps/compass-symbolic.svg",
+      "tag": null,
+      "subproject": null
+    }
+  },
+  "configure": {
+    "/home/marco/Projects/kctracker/_build/data/me.flagmaster.kctracker.service": {
+      "destination": "{datadir}/dbus-1/services/me.flagmaster.kctracker.service",
+      "tag": null,
+      "subproject": null
+    }
+  }
+}

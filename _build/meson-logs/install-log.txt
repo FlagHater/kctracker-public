@@ -1,0 +1,22 @@
+# List of files installed by Meson
+# Does not contain files installed by custom scripts.
+/app/share/applications/me.flagmaster.kctracker.desktop
+/app/share/metainfo/me.flagmaster.kctracker.metainfo.xml
+/app/bin/kctracker
+/app/share/glib-2.0/schemas/me.flagmaster.kctracker.gschema.xml
+/app/share/dbus-1/services/me.flagmaster.kctracker.service
+/app/share/icons/hicolor/scalable/apps/me.flagmaster.kctracker.svg
+/app/share/icons/hicolor/symbolic/apps/me.flagmaster.kctracker-symbolic.svg
+/app/share/icons/hicolor/symbolic/apps/compass-symbolic.svg
+/app/share/icons/hicolor/symbolic/apps
+/app/share/icons/hicolor/symbolic
+/app/share/icons/hicolor/scalable/apps
+/app/share/icons/hicolor/scalable
+/app/share/icons/hicolor
+/app/share/icons
+/app/share/dbus-1/services
+/app/share/dbus-1
+/app/share/glib-2.0/schemas
+/app/share/glib-2.0
+/app/share/metainfo
+/app/share/applications

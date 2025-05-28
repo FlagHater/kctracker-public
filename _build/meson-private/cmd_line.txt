@@ -1,0 +1,6 @@
+[options]
+prefix = /app
+libdir = lib
+
+[properties]
+
